@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+	margin:0;
+	min-width: 800px;
+	font-size: 1.0em;
+}
+
+.headerlink:hover {
+    color: white !important;
+    background-color: #00C489;
+}
+
+.header-left:hover {
+	color: white !important;
+    background-color: #00C489;
+}
+
+a:link {
+	text-decoration: none;
+	color:black;
+}
+
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+.paintings a:hover {
+	background-color: #00C489;
+}
+
+.other a:hover {
+	background-color: #00C489;
+}
+
+
+.nav {
+	position: fixed;
+	min-width: 700px;
+	min-height: 70.5px;
+	height: 10vh;
+	background-color: #ffc8d5;
+	width: 100vw;
+	z-index: 1;
+	top: 0px;
+}
+
+.header-left {
+	position: absolute;
+	left: 0;
+	margin: 13px;
+	padding: 6px 6px 0px 6px;
+	font-size: 32px;
+	font-weight: bold;
+	font-family: 'Interstate', futura, sans-serif;
+}
+
+.header-right{
+	position: absolute;
+	right:0;
+	text-align: right;
+	margin: 30px;
+	font-family: futura, sans-serif;
+	font-size:18px;
+}
+
+.headerlink{
+	
+	padding: 10px;
+}
+
+
+.paintings {
+	display: inline-block;
+	height: 90vh;
+	min-height: 460px;
+	width: 100%;
+	background-image: url(paintings/DSC_0990.png);
+	/*background-color: yellow;*/
+	background-position: top;
+	background-size: cover;
+	clear: both;
+	margin-top: 10vh;
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.paintings .title {
+	margin: auto;
+	text-align: center;
+	border: 13px solid white;
+	color: white;
+	padding: 40px 60px 40px 60px;
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 0px;
+	
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Interstate', sans-serif;
+	z-index: auto;
+
+	color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+}
+
+.other .title {
+	margin: auto;
+	text-align: center;
+	border: 13px solid white;
+	color: white;
+	padding: 40px 60px 40px 60px;
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 0px;
+
+	font-size: 40px;
+	font-family: 'Interstate', sans-serif;
+	font-weight: bold;
+	z-index: auto;
+
+	color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+	
+}
+
+.other {
+	display: inline-block;
+	height: 90vh;
+	min-height: 460px;
+	width: 100%;
+	background-image: url(paintings/3.jpg);
+	/*background-color: blue;*/
+	background-position: center;
+	background-size: cover;
+	clear: both;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about {
+	position: absolute;
+	height: 90vh;
+	min-height: 460px;
+	width: 100%;
+	min-width: 800px;
+	background-color: #ffc8d5;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.innerabout {
+
+}
+
+.description {
+
+	display: inline-block;
+	margin-top: 30px;
+	line-height: 35px;
+	font-size: 24px;
+	font-family: 'Avant Garde', sans-serif;
+	text-align: left;
+	padding: 5px;
+}
+
+.circle {
+	display: inline-block;
+	width:250px;
+	height:250px;
+	border-radius:50%;
+	font-size:45px;
+	color:#fff;
+	line-height:250px;
+	text-align:center;
+	vertical-align: top;
+	font-family: 'Bembo', serif;
+	font-style: italic;
+	background:#000;
+	border: 30px solid #00C489;
+}
+
+.image {
+	text-align: center;
+}
+.image img {
+	min-height: 550px;
+	height: 86vh;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+.image.P1 {
+	margin-top: 10vh;
+}
+
+
