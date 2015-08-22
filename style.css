@@ -216,4 +216,11 @@ a:visited {
 	margin-top: 10vh;
 }
 
+.p1 span {
+	display: none;
+}
+
+img:hover + span {
+	display: block;
+}
 
