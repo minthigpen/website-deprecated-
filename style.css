@@ -1,11 +1,21 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'Interstate';
+  src: url('fonts/interstate/interstate.eot'); /* IE9 Compat Modes */
+  src: url('fonts/interstate/interstate.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/interstate/interstate.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/interstate/interstate.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/interstate/interstate.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/interstate/interstate.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Apercu';
+  src: url('fonts/Apercu/apercu-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Apercu/apercu-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Apercu/apercu-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Apercu/apercu-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Apercu/apercu-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Apercu/apercu-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 body {
@@ -34,14 +44,9 @@ a:visited {
 	color: inherit;
 }
 
-.paintings a:hover {
+.section a:hover {
 	background-color: #00C489;
 }
-
-.other a:hover {
-	background-color: #00C489;
-}
-
 
 .nav {
 	position: fixed;
@@ -69,7 +74,7 @@ a:visited {
 	right:0;
 	text-align: right;
 	margin: 30px;
-	font-family: futura, sans-serif;
+	font-family: "Apercu", sans-serif;
 	font-size:18px;
 }
 
@@ -78,84 +83,54 @@ a:visited {
 	padding: 10px;
 }
 
-
-.paintings {
+.section {
 	display: inline-block;
 	height: 90vh;
 	min-height: 460px;
 	width: 100%;
-	background-image: url(paintings/DSC_0990.png);
 	/*background-color: yellow;*/
-	background-position: top;
 	background-size: cover;
 	clear: both;
-	margin-top: 10vh;
-
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.paintings .title {
-	margin: auto;
-	text-align: center;
-	border: 13px solid white;
-	color: white;
-	padding: 40px 60px 40px 60px;
-	width: auto;
-	height: auto;
-	position: relative;
-	top: 0px;
-	
-	font-size: 40px;
-	font-weight: bold;
-	font-family: 'Interstate', sans-serif;
-	z-index: auto;
-
-	color: black;
-   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 2px;
-   -webkit-text-stroke-color: black;
+.paintings {
+	background-image: url(paintings/paintings_banner.png);
+	background-position: bottom;
+	margin-top: 10vh;
 }
 
-.other .title {
-	margin: auto;
-	text-align: center;
-	border: 13px solid white;
-	color: white;
-	padding: 40px 60px 40px 60px;
-	width: auto;
-	height: auto;
-	position: relative;
-	top: 0px;
-
-	font-size: 40px;
-	font-family: 'Interstate', sans-serif;
-	font-weight: bold;
-	z-index: auto;
-
-	color: black;
-   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 2px;
-   -webkit-text-stroke-color: black;
-	
+.studies {
+	background-image: url(studies/studies_banner.png);
 }
 
 .other {
-	display: inline-block;
-	height: 90vh;
-	min-height: 460px;
-	width: 100%;
-	background-image: url(paintings/3.jpg);
-	/*background-color: blue;*/
-	background-position: center;
-	background-size: cover;
-	clear: both;
+	background-image: url(other/IMG_7905.jpg);
+}
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.title {
+	margin: auto;
+	text-align: center;
+	border: 13px solid white;
+	color: white;
+	padding: 40px 60px 40px 60px;
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 0px;
+	
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Interstate', sans-serif;
+	z-index: auto;
+
+	color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
 .about {
@@ -169,32 +144,29 @@ a:visited {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-}
-
-.innerabout {
-
 }
 
 .description {
-
 	display: inline-block;
 	margin-top: 30px;
 	line-height: 35px;
 	font-size: 24px;
-	font-family: 'Avant Garde', sans-serif;
+	font-family: 'Apercu', sans-serif;
 	text-align: left;
 	padding: 5px;
+}
+.description > b {
+	font-family: 'interstate', sans-serif;
 }
 
 .circle {
 	display: inline-block;
-	width:250px;
-	height:250px;
+	width:200px;
+	height:200px;
 	border-radius:50%;
 	font-size:45px;
 	color:#fff;
-	line-height:250px;
+	line-height:200px;
 	text-align:center;
 	vertical-align: top;
 	font-family: 'Bembo', serif;
@@ -205,6 +177,7 @@ a:visited {
 
 .image {
 	text-align: center;
+	position: relative;
 }
 .image img {
 	min-height: 550px;
@@ -216,11 +189,25 @@ a:visited {
 	margin-top: 10vh;
 }
 
-.p1 span {
+.label {
 	display: none;
+	position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 2vh 0 2vh 0;
+    font-family: 'futura', sans-serif;
+    font-size: 15px;
 }
 
-img:hover + span {
+.labeldescr {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+
+.label:hover ,
+.img:hover + .label {
 	display: block;
 }
 
